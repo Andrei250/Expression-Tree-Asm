@@ -1,0 +1,22 @@
+Dumitrescu Andrei 323CC
+
+Create-tree:
+	Abordarea este urmatoarea: Parcurg de la final spre inceput si verific
+	caracter cu caracter. Daca este cifra continui si retin pozitia de
+	final a fiecarui numar. Cand ajung la spatiu verific daca este
+	spatiu inainte unui numar sau inaintea unui operator. Daca este
+	inainte aunui numar atunci creez un sir si mut numarul in acel sir.
+	Dupa aloc memorie pentru un nod cu fii nuli si cu <data> acel sir.
+	Il pun pe stiva si continui.
+	Daca este operator, aloc memorie pentru nod si pui in <data> valoarea
+	operatorului. Iau din stiva ultimele 2 noduri, care vor reprezenta
+	fii nodului curent. La final pun pe stiva noul nod.
+	La finalul algoritmului o sa am un singur nod pe stiva, pe care il
+	scot la final in registrul eax.
+
+Atoi_Iocla:
+	Verific ce fel de semn este la inceput (+ sau -).
+	Apoi parcurg de la inceput spre final sirul de caractere si 
+	inmultesc pe eax cu 10 si adun cifra respectiva.
+	La final verific daca numarul a fost negativ si il transform.
+	In eax se afla raspunsul functiei.
